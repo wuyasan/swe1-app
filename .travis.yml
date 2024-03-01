@@ -26,9 +26,9 @@ after_script:
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: "Encrypted <access-key-id>=AKIA5FTY6LQERFDC2IPM"
+    secure: "Encrypted <access-key-id>=AKIA5FTY6LQE3V6VKP6K"
   secret_access_key: 
-    secure: "Encypted <secret-access-key>=v*1ns$8^s8isxj$-7c=f4%91gy3964s9sc%&90zb+6+wpiah*8"
+    secure: "Encypted <secret-access-key>=arQoSJQeARsDA160VaVjLWeIxW1AP0HFlkvtTpbQ"
   region: "us-west-2"
   app: "djangopoll"
   env: "django-env"
