@@ -1,10 +1,12 @@
 language: python
 
+dist: focal
+
 python:
-  - 3.7
+  - 3.10
 
 env:
-  - DJANGO = 2.2
+  - DJANGO = 5.0.2
 
 install:
   - pip install -r requirements.txt
