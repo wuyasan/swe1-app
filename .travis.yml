@@ -3,6 +3,9 @@ language: python
 python:
   - 3.7
 
+env:
+  - DJANGO
+
 install:
   - pip install -r requirements.txt
 
@@ -16,14 +19,16 @@ script:
   - coverage run --source=djangopoll,polls manage.py test
 
 after_script:
-  deploy:
-    provider: elasticbeanstalk
-    access_key_id:
-      secure: "AKIA5FTY6LQERFDC2IPM"
-    secret_access_key:
-      secure: "v*1ns$8^s8isxj$-7c=f4%91gy3964s9sc%&90zb+6+wpiah*8"
-    region: "us-west-2"
-    app: "djangopoll"
-    env: "e-fau2vk9aiw"
-    bucket_name: "the-target-S3-bucket"
+  - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "AKIA5FTY6LQERFDC2IPM"
+  secret_access_key:
+    secure: "v*1ns$8^s8isxj$-7c=f4%91gy3964s9sc%&90zb+6+wpiah*8"
+  region: "us-west-2"
+  app: "djangopoll"
+  env: "e-fau2vk9aiw"
+  bucket_name: "the-target-S3-bucket"
   
