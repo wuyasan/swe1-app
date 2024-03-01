@@ -32,7 +32,7 @@ deploy:
   region: "us-west-2"
   app: "djangopoll"
   env: "django-env"
-  bucket_name: "the-target-S3-bucket"
+  bucket_name: "elasticbeanstalk-us-west-2-905418005513"
   on:
     repo: "wuyasan/swe1-app"
     branch: "main"
