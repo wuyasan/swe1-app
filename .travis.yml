@@ -29,7 +29,7 @@ deploy:
   secret_access_key: $AWSSecretKey
   region: "us-west-2"
   app: "djangoPolls"
-  env: "django-env"
+  env: "djangoPolls"
   bucket_name: "elasticbeanstalk-us-west-2-905418005513"
   on:
     repo: "wuyasan/swe1-app"
