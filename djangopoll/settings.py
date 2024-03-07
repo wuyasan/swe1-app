@@ -28,7 +28,7 @@ SECRET_KEY = "arQoSJQeARsDA160VaVjLWeIxW1AP0HFlkvtTpbQ"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["djangoPolls.eba-ddmuj2ix.us-west-2.elasticbeanstalk.com"]
+ALLOWED_HOSTS = ["djangoPolls.eba-ddmuj2ix.us-west-2.elasticbeanstalk.com", "http://django-poll.eba-ampusmtc.us-west-2.elasticbeanstalk.com"]
 
 
 # Application definition
