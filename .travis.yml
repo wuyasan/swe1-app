@@ -28,8 +28,8 @@ deploy:
   access_key_id: $AWSAccessKeyID
   secret_access_key: $AWSSecretKey
   region: "us-west-2"
-  app: "django-poll"
-  env: "django-poll"
+  app: "django-polls"
+  env: "django-polls"
   bucket_name: "elasticbeanstalk-us-west-2-905418005513"
   on:
     repo: "wuyasan/swe1-app"
